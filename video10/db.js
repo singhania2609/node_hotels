@@ -22,12 +22,8 @@ const mongoURL=process.env.MONGODB_URL;
 
 
 // Set up MongoDB connection — no options needed
-mongoose.connect(process.env.MONGODB_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  ssl: true,
-  tlsAllowInvalidCertificates: false
-});
+mongoose.connect(mongoURL);
+
 
 
 // Get the default connection
