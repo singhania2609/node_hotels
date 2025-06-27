@@ -3,8 +3,16 @@ const app = express();
 
 const db = require('./db'); // MongoDB connection file
 
+require('dotenv').config();
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // Middleware to parse JSON
+
+//START SERVER
+//process.env.PORT->this is online server
+//3000 this start local server
+
+const PORT=process.env.PORT || 3000;
 
 // Root route
 app.get('/', (req, res) => {
@@ -19,8 +27,11 @@ app.use('/person', personRouter);
 const menuitemRouter = require('./routes/menuitemRouter');
 app.use('/menuitem', menuitemRouter);
 
+
+
 // Start the server
-const PORT = 3000;
+//const PORT = 3000;
+
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
