@@ -3,7 +3,7 @@
 const passport=require('passport');
 const LocalStrategy=require('passport-local').Strategy; //username and password strategy
 
-const Person = require('./video10/models/Person');
+const Person = require('./video12/models/Person');
 
 
 // Passport Configuration
