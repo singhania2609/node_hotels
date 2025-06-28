@@ -11,13 +11,13 @@ require('dotenv').config();
 //cancel this local//const mongoURL = 'mongodb://localhost:27017/hotel'; // Database name is 'hotel'
 
 //using this local URL 
-//const mongoURL=process.env.MONGODB_URL_LOCAL;
+const mongoURL=process.env.MONGODB_URL_LOCAL;
 
 //this URL is MongoDB online URL
-//const mongoURL=const mongoURL = 'mongodb+srv://helloworld:123Rahul@cluster0.j5lze88.mongodb.net/hotel?retryWrites=true&w=majority';
+//const mongoURL= 'mongodb+srv://helloworld:123Rahul@cluster0.j5lze88.mongodb.net/hotel?retryWrites=true&w=majority';
 
 
-const mongoURL=process.env.MONGODB_URL;
+//const mongoURL=process.env.MONGODB_URL;
 
 
 
